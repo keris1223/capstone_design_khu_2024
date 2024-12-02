@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 import matplotlib.pyplot as plt
+
 # 성능 지표 저장용 딕셔너리 선언
 epoch_metrics = {
     "epoch": [],
@@ -226,5 +227,6 @@ plt.legend()
 
 plt.tight_layout()
 plt.show()
+
 # 모델 저장
 save_model(model)
