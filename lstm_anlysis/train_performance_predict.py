@@ -116,6 +116,7 @@ def predict_and_evaluate(model, dataloaders, device, features):
 
         all_y_true.extend(y_true)
         all_y_pred.extend(y_pred)
+
     all_y_true = np.array(all_y_true)
     all_y_pred = np.array(all_y_pred)
 
